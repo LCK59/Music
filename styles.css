@@ -185,7 +185,6 @@ html {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
-  flex-wrap: wrap;
 }
 
 .artist-list {
