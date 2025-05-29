@@ -144,11 +144,21 @@ html {
   padding-left: 40px;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
+@media (max-width: 600px) {
+  .rapper-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .rapper-item img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
 
 .rapper-item {
   display: flex;
