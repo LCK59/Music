@@ -155,7 +155,12 @@ html {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
-  flex-wrap: wrap;
+}
+
+.rapper-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
 }
 
 .rapper-item h3 {
