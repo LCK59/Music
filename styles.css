@@ -1,10 +1,10 @@
 html {
     scroll-behavior: smooth;
-    margin-left: 15px;
   }
 
   h1, h2, h3, p {
     color: black;
+    margin-left: 15px;
   }
 
    body {
