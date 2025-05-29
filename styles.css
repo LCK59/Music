@@ -77,11 +77,12 @@ html {
     color: antiquewhite;
   }
 
+/*conflicts with rappers-list*/
   li img {
-    display: block;
+   /* display: block;
     margin-top: 10px;
     width: 280px;
-    border-radius: 10px;
+    border-radius: 10px;*/
   }
   
   .corner-img {
