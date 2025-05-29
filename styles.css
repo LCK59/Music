@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
   }
 
-  h1, h2, h3, p {
+  h1:not(.no-margin), h2, h3, p:not(.no-margin) {
     color: black;
     margin-left: 15px;
   }
