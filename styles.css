@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  h1:not(.no-margin), h2, h3, p:not(.no-margin) {
+    color: black;
+    margin-left: 15px;
+  }
+
+   body {
+      margin: 5;
+      padding: 5;
+      font-family: Arial, sans-serif;
+    }
+
+ header {
+  background: white;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+  nav {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    color: black;
+  }
+
+  main {
+    flex: 3;
+  }
+
+  article {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  article h2 {
+    margin-top: 0;
+  }
+
+  aside {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    height: fit-content;
+  }
+
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  footer p {
+    color: antiquewhite;
+  }
+
+/*conflicts with rappers-list
+  li img {
+    display: block;
+    margin-top: 10px;
+    width: 280px;
+    border-radius: 10px;
+  }*/
+  
+  .corner-img {
+   position: absolute;
+   bottom: 0;
+   right: 20px;
+   width: auto;
+   height: 150px;
+  }
+
+  .rapper-list li {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+ .rapper-pic, .rapper-list li img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+
+  .float-left {
+  float: left;
+  margin: 10px;
+}
+
+.note-row {
+      position: fixed;
+      left: 0;
+      width: 200vw;
+      white-space: nowrap;
+      font-size: 2rem;
+      opacity: 0.25;
+      pointer-events: none;
+      animation: scrollNotes 10s linear infinite;
+      z-index: -1;
+    }
+
+    /* Each row at a different height */
+    .row1 { top: 10%; animation-duration: 10s; }
+    .row2 { top: 30%; animation-duration: 15s; }
+    .row3 { top: 50%; animation-duration: 12s; }
+    .row4 { top: 70%; animation-duration: 11s; }
+    .row5 { top: 90%; animation-duration: 9s; }
+
+    @keyframes scrollNotes {
+      0% {
+        transform: translateX(-100vw);
+      }
+      100% {
+        transform: translateX(100vw);
+      }
+    }
+
+  ul {
+    list-style: none;
+    padding-left: 40px;
+  }
+
+@media (max-width: 600px) {
+  .rapper-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rapper-item img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+
+.rapper-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.rapper-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rapper-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.rapper-item p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+  
+.artist-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.artist-list {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.artist-pic {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.artist-info {
+  max-width: 250px;
+}
+
+@media (max-width: 600px) {
+  .artist-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .artist-pic {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 150px;
+  }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: aqua;
+}
+
+a:link {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:visited{
+  color: purple;
+}
+
+a:hover {
+  color: red;
+  text-decoration: none;
+}
